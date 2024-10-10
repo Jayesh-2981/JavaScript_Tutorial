@@ -1,0 +1,39 @@
+**Chapter 5 - Arrays**
+
+- Arrays are variables which can hold more than one value.
+
+const fruits = ["banana", "apple", "grapes"]
+const a1 = [7, "Jayesh", false]     //can be different types
+
+**Accessing Values**
+let numbers = [1,2,7,9]
+numbers[0]  //1
+numbers[1]  //2
+
+**Finding the length**
+let numbers = [1,7,9,21]
+numbers[0]  //1
+numbers.length  //4
+
+**Changing the values**
+let numbers = [7,2,40,9]
+numbers[2] =8   //"Numbers" now becomes [7,2,8,9]
+
+- Arrays are mutable 
+- Arrays can be changed
+- In JS, arrays are objects.
+- The type of operator of arrays returns object.
+    const n = [1,7,9]
+    type of n   //returns "object"
+- Arrays can hold many values under a single name.
+
+**Array Methods**
+- There are some important array methods in JavaScript. Some of them are as follows:
+
+1) toString() - converts an array to a string of comma separated values.
+let n = [1,7,9]
+n.toString()    // 1,7,9 
+
+2) join() - joins all the array elements using a separator
+let n = [7,9,13]
+n.join("-") // 7-9-13

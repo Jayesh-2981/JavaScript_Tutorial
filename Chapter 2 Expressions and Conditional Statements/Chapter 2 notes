@@ -1,0 +1,113 @@
+**Chapter 2 - Expressions and Conditional Statements**
+A fragment of code that produces a value is called an expression. Every value written literally is an expression
+eg. 77 or "Jayesh".
+
+**Operators in Javascript**
+
+1) **Arithmetic Operators**
++   Addition
+-   Subtraction
+*   Multiplication
+**  Exponentiation
+/   Division
+%   Modulus
+++  Increment
+--  Decrement
+
+2) **Assignment Operators**
+=   x=y
++=  x=x+y
+-=  x=x-y
+*=  x=x*y
+/=  x=x/y
+%=  x=x%y
+**= x=x**y
+
+3) **Comparison Operators
+==  equal to
+!=  not equal
+=== equal value and datatype
+!== not equal values and not equal type
+>   greater than
+<   less than
+>=  greater than equal to
+<=  less than equal to
+?   ternary Operator
+
+4) **Logical Operators**
+&&  logical and
+||  logical not
+!   logical not
+
+- Apart from these, we also have type and bitwise operators. Bitwise operators perform bit by bit operations of numbers.
+
+**Comments in JavaScript**
+- Sometimes we want out programs to contain a text which is not executed by the JS engine.
+- Such a text is called comment in JavaScript.
+- A comment in JavaScript can be written as follows:
+
+let a = 2;  //This is single line Comment
+
+/*
+I am a 
+multiline comment
+*/
+
+- Sometimes comments are used to prevent the execution of some lines of code.
+
+let switch = true;
+// switch = false;  => Commented line won't execute.
+
+**Conditional Statements**
+- Sometimes we might have to execute a block of code based off some condition.
+- For example, a prompt might ask for the age of the user and if its greater than 18, display a special message.
+- In javascript we have three forms of if...else statement
+1) if statement
+2) if...else statement
+3) if...else if...else statement
+
+**If statement**
+- The if statement in javascript looks like this:
+
+if(Condition){
+    //execute this code
+}
+
+- The if statement evaluates the condition inside the ().
+- If the condition is evaluated to true, the code inside the body of if is executed else the code is not executed.
+
+**if...else statement**
+- The if statement can have an optional else clause.
+- The syntax looks something like this
+if(condition){
+    //block of code if condition is true
+}
+else{
+    // block of code if condtition is false
+}
+
+- if the condition is true, code inside if is executed else code inside else block is executed.
+
+**if...else if...else statement**
+- sometimes we might want to keep recheking a set of conditions one by one until one matches.
+- We use if elseif for achieving this.
+- Syntax of if...elseif looks like this
+
+if(age>0){
+    consol.log("A valid age")
+}else if(age>10 %% age<18){
+    console.log("You are a kid")
+}else if(age>18){
+    console.log("You are an adult")
+}else{
+    consol.log("invalid age")
+}
+
+**Javascript Ternary Operator**
+- Evaluates a condition and executes a block of code based on the condition.
+
+Condition ? exp1: exp2
+
+Example:-
+
+(marks>10)?'Yes':'No'
