@@ -1,7 +1,7 @@
 **Chapter 1 - Variables and Data**
 Just like we follow some rules while speaking english (The grammer), we have some rules to follow while writing a javascript program. The set of these rules is called syntax in javascript.
 
-**What is a variable ?**
+**_What is a variable ?_**
 
 - A variable is a container that stores a value.
 - The value of a javascript variable can be changed during the execution of a program.
@@ -9,14 +9,14 @@ Just like we follow some rules while speaking english (The grammer), we have som
   let b = 7;
   const c = 7;
 
-**Rules of Choosing variable names**
+**_Rules of Choosing variable names_**
 
 - Letters, digits, underscores and $ sign allowed.
-- Must begin with a $, \_ or a letter.
+- Must begin with a $, `_` or a letter.
 - Javascript reserverd words cannot be used as a variable name.
 - Jayesh and jaYEsh are different variables (Case Sensitive).
 
-**Var vs let vs const in javascript**
+**_Var vs let vs const in javascript_**
 
 1. var is globally scoped while let and const are block scoped
 2. Var can be updated & redeclared within its scope
@@ -25,14 +25,14 @@ Just like we follow some rules while speaking english (The grammer), we have som
 5. Var variables are intialized with undefined whereas let and const variables are not initialized.
 6. Const must be intialized during declaration unlike let and var.
 
-**Primitive Data types and objects**
+**_Primitive Data types and objects_**
 
 - Primitive data types are a set of basic datatypes in javascript.
 - Object is a non primitive datatype in javascript.
 - There are seven primitive datatypes in javascript
   null, number, string, symbol, undefined, boolean, BitInt
 
-**Object**
+**_Object_**
 An object in javascript can be created as follows.
 const item = {
 name : "LED Bulb",\

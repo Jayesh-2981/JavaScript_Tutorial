@@ -5,7 +5,7 @@
 - JavaScript's ability in the browser is very limited to protect the user's safety.
 - Eg. a webpage on http://goofle.com cannot access http://google.com and steal information from there.
 
-**Developer Tools**
+**_Developer Tools_**
 
 - Every browser has some developer tools which makes a developer's life a lot easier.
 
@@ -17,7 +17,7 @@
 
 - We can also write JavaScript commands in the Console.
 
-**The Script Tag**
+**_The Script Tag_**
 
 - The script tag is used to insert JavaScript into an HTML page.
 - The Script tag can be used to insert external or internal scripts.
@@ -26,13 +26,13 @@
     alert("Hello")
 </script>
 
-**OR**
+**_OR_**
 
 <script src = "./script.js"></script>
 
 - The benefit of a separate javascript file is that the browser will download it and store it its cache.
 
-**Console Object Methods**
+**_Console Object Methods_**
 
 - The console object has several methods, log being one of them. Some of them are as follows:
 
@@ -74,7 +74,7 @@
 
 - comprehensive list can be looked up on MDN.
 
-**Interaction : alert, prompt and confirm**
+**_Interaction : alert, prompt and confirm_**
 
 - alert => Used to invoke a mini window with a message
   alert("hello")
@@ -101,7 +101,7 @@ document.write("Please allow me to write") //if no then print this message
 
 - The exact location and look is determined by the browser which is a limitation.
 
-**Window object, BOM and DOM**
+**_Window object, BOM and DOM_**
 
 - Window contains following things =>
 
@@ -112,13 +112,13 @@ document.write("Please allow me to write") //if no then print this message
 - Window object represents browser window and provides methods to control it.
 - It is a global object.
 
-**Document Object Model (DOM)**
+**_Document Object Model (DOM)_**
 
 - Dom represents the page content as HTML
   document.body => Page body as JS object
   document.body.style.background = "green" => Changes page background to green
 
-**Browser Object Model (BOM)**
+**_Browser Object Model (BOM)_**
 
 - The Browser Object Model (BOM) represents additional objects provided by the browser (host environment) for working with everything except the document.
 - The functions alert/confirm/prompt are also a part of the BOM.

@@ -10,7 +10,7 @@
 
   let name = 'Jayesh'
 
-**Template literals**
+**_Template literals_**
 
 - Template literals use backtics instead of quotes to define a string.
 
@@ -24,7 +24,7 @@
 
   let a = `This is ${name}` //Prints `This is Jayesh`
 
-**Escape Sequence Characters**
+**_Escape Sequence Characters_**
 
 - if you try to print the following string, javascript will misunderstand it
 
@@ -40,7 +40,7 @@
   2. \t => Tab
   3. \r => Carriage Return
 
-**String Properties and Methods**
+**_String Properties and Methods_**
 
 1. let name = "Jayesh"
    name.length //6

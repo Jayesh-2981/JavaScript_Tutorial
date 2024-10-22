@@ -3,7 +3,7 @@
 - We use loops to perform repeated actions.
 - For Example - If you are assigned a task of printing numbers from 1 to 100, it will be very hectic to do it mannually, Loops help us automate such tasks.
 
-**Types of loops in Javascript**
+**_Types of loops in Javascript_**
 
 1. for loop => loop a block of code no of times.
 2. for in loop => loops through the keys of an Object.
@@ -11,7 +11,7 @@
 4. while loop => loops a block based on a specific condition.
 5. do -while loop => while loop variant which runs atleast once.
 
-**The for loop**
+**_The for loop_**
 
 - The syntax of a for loop looks something like this
 
@@ -31,7 +31,7 @@ console.log(i);
 
 ---
 
-**The for in loop**
+**_The for in loop_**
 
 - The syntax of for in loop looks like this
 
@@ -52,7 +52,7 @@ console.log("Marks of " + a + " are " + obj[a]);
 
 ---
 
-**The for of loop**
+**_The for of loop_**
 
 - The syntax of for-of loop looks like this
 
@@ -68,7 +68,7 @@ console.log("Marks of " + a + " are " + obj[a]);
 
 ---
 
-**The while loop**
+**_The while loop_**
 
 - The syntax of while loop looks like this:
   while(condition){
@@ -87,7 +87,7 @@ Note : If the condition never becomes false, the loop wiil never end and this mi
 
 ---
 
-**The do-while loop**
+**_The do-while loop_**
 
 - The do while loop's syntax looks like this:
   do{
@@ -96,7 +96,7 @@ Note : If the condition never becomes false, the loop wiil never end and this mi
 
 ---
 
-**Functions in Javascript**
+**_Functions in Javascript_**
 
 - A javascript function is a block of code designed to perform a particular task.
 - Syntax pf a function looks something like this:

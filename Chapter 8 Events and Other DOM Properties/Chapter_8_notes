@@ -1,0 +1,32 @@
+**Chapter 8 - Events & other DOM properties**
+
+**_Console.dir function_**
+
+- Console.log shows the element DOM tree.
+- Console.dir shows the element as an object with its properties.
+
+**_tagName / nodeName_**
+
+- Used to read tag name of an element
+- tagName => only exists for Element nodes
+- nodeName => defined for only node (text, comment, etc.)
+
+**_innerHTML and outerHTML_**
+
+- The innerHTML property allows to get the HTML inside the element as a string. (Valid for element nodes only)
+- The outerHTML property contains the full HTML innerHTML + the element itself.
+- innerHTML is valid for element nodes. For other node types we can use nodeValue or data.
+
+**_textContent_**
+
+- provides accedss to the text inside the element: only text, minus all tags.
+
+**_The hidden property_**
+
+- The "hidden" attribute and the DOM property specifies whether the element is visible or not.
+
+<div hidden> I am hidden</div>
+<div id ="element"> I can be hidden </div>
+<script>
+    element.hidden =true;
+</script>

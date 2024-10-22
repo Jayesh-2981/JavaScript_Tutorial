@@ -11,13 +11,13 @@
 
 - A text node is always a leaf of the tree.
 
-**Auto Correction**
+**_Auto Correction_**
 
 - If an erroneoud HTML is encountered by the browser, it tends to correct it.
 - for example, if we put something after the body, it is automatically moved inside the body.
 - Another example is <table> tag which must contain <tbody>
 
-**Walking the DOM**
+**_Walking the DOM_**
 
 <html>
 <head>
@@ -32,16 +32,16 @@
 - document.head => page head tag
 - document.documentElement => page HTML tag
 
-- **Note**
+- **_Note_**
 - Document body can sometimes be null if the javascript is written before the body tag.
 
-**Children of an Element**
+**_Children of an Element_**
 
 - Direct as well as deeply nested elements of an element are called its children.
 - Child nodes => Elements that are direct children. for example, head and body are children of <html>
 - Descendant nodes => All nested elements, childrens, there childrens and so on...
 
-**firstChild, lastChild, childNodes**
+**_firstChild, lastChild, childNodes_**
 
 - element.firstChild => first child element
 - element.lastChild => last child element
@@ -53,19 +53,19 @@
 
 - There is also a method elem.hasChildNodes() to check whether there are any child nodes.
 
-**Note**
+**_Note_**
 
 - childNodes looks like an array.
 - But its not actually an array but a collection.
 - We can use Array from (Collection) to convert it into an array. _Array methods will not work_
 
-**Notes on DOM Collections**
+**_Notes on DOM Collections_**
 
 - They are read-only
 - They are live, elem.childNodes variable(reference) will automatically update if childNodes of elem is changed.
 - They are iterable using for...of loop.
 
-**Siblings and the Parent**
+**_Siblings and the Parent_**
 
 - Siblings are nodes that are childrens of the same parent
 
@@ -81,7 +81,7 @@
 - alert(document.documentElement.parentNode); //document
 - alert(document.documentElement.parentElement); //null
 
-**Element Only Navigation**
+**_Element Only Navigation_**
 
 - Sometimes, we dont want text or comment nodes.
 - Some links only take Element notes into account.
@@ -92,7 +92,7 @@
 - document.firstElementChild => First Element Child
 - document.lastElementChild => Last Element Child
 
-**Table Links**
+**_Table Links_**
 
 - Certain DOM elements may provide additional properties specific to there type for convenience.
 
@@ -108,7 +108,7 @@
 - tr.rowIndex => Row number starting from 0
 - td.cellIndex => number of cells inside enclosing <tr>
 
-**Searching the DOM**
+**_Searching the DOM_**
 
 - DOM navigation properties are helpful when the elements are close to each other.
 - If they are not close to each other, we have some more methods to search the DOM
@@ -140,7 +140,7 @@
 
 - Searches elements by the name attribute.
 
-**Matches, Closest and Contains methods**
+**_Matches, Closest and Contains methods_**
 
 - There are three important methods to search the DOM
 

@@ -5,17 +5,17 @@
 const fruits = ["banana", "apple", "grapes"]
 const a1 = [7, "Jayesh", false] //can be different types
 
-**Accessing Values**
+**_Accessing Values_**
 let numbers = [1,2,7,9]
 numbers[0] //1
 numbers[1] //2
 
-**Finding the length**
+**_Finding the length_**
 let numbers = [1,7,9,21]
 numbers[0] //1
 numbers.length //4
 
-**Changing the values**
+**_Changing the values_**
 let numbers = [7,2,40,9]
 numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
@@ -27,7 +27,7 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
   type of n //returns "object"
 - Arrays can hold many values under a single name.
 
-**Array Methods**
+**_Array Methods_**
 
 - There are some important array methods in JavaScript. Some of them are as follows:
 
@@ -111,7 +111,7 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - reverses the elements in the source array
 
-**Loops in Arrays**
+**_Loops in Arrays_**
 
 - Arrays can be looped through using the classical JavaScript for loops or through some other methods below.
 
