@@ -139,3 +139,11 @@
 6. document.getElementsByName
 
 - Searches elements by the name attribute.
+
+**Matches, Closest and Contains methods**
+
+- There are three important methods to search the DOM
+
+1. elem.matches(css) => To check if elements matches the given CSS selector.
+2. elem.closest(css) => To look for the nearest ancestor that mathces the given CSS selector. The element itself is also checked.
+3. elemA.Contains(elemB) => Returns true if elemB is inside elemA (a descendant of elemA) or when elemA==elemB.
