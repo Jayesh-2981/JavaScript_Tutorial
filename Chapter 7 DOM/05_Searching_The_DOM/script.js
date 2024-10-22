@@ -11,8 +11,8 @@ cTitles[1].style.color = "blue";
 cTitles[2].style.color = "Green";
 console.log(cTitles);
 
-document.querySelector(".this").style.color = "white"
-document.querySelector(".this").style.background = "red"
+document.querySelector(".this").style.color = "white";
+document.querySelector(".this").style.background = "red";
 
 console.log(document.getElementsByTagName("card")); // NodeList(3) [h5#firstCardTitle.card-title, h5#firstCardTitle.card-title, h5#firstCardTitle.card-title]
 console.log(document.querySelector(".card").getElementsByTagName("a")); //HTMLCollection [a.btn.btn-primary.this]

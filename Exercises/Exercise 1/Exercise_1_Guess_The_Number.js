@@ -8,23 +8,21 @@ The program is expected to terminate once the number is guessed.
 Number should be between 1-100.
 */
 
-
-// Solution => 
+// Solution =>
 let number = Math.floor(Math.random() * 100);
 
 let totalGuesses = 0;
 let userGuess = 0;
 
 while (userGuess !== number) {
-    userGuess = parseInt(prompt("Guess a number between 1n and 100 : "));
-    totalGuesses++;
+  userGuess = parseInt(prompt("Guess a number between 1n and 100 : "));
+  totalGuesses++;
 
-    if (userGuess > number) {
-        alert("It's a greater number! Try again.");
-    } else if (userGuess < number) {
-        alert("It is a lesser number! Try again.");
-    } else if (userGuess === number) {
-        alert(`Congratulations! you did it ${totalGuesses} attempts.`)
-    }
-
+  if (userGuess > number) {
+    alert("It's a greater number! Try again.");
+  } else if (userGuess < number) {
+    alert("It is a lesser number! Try again.");
+  } else if (userGuess === number) {
+    alert(`Congratulations! you did it ${totalGuesses} attempts.`);
+  }
 }

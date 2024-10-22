@@ -7,32 +7,32 @@
 console.log("Solutions =>");
 // 1)
 let a = "Jayesh";
-let b = 9
-console.log(a + b)
+let b = 9;
+console.log(a + b);
 
 // 2)
-console.log(typeof(a + b));
+console.log(typeof (a + b));
 
 // 3)
 const object = {
-    name: "Jayesh",
-    section: 1,
-    isPrincipal: false
-}
+  name: "Jayesh",
+  section: 1,
+  isPrincipal: false,
+};
 
 //object = "JD" //Error
 
 // 4)
-object['name'] = "JD"
-object['friend'] = "Akshay"
+object["name"] = "JD";
+object["friend"] = "Akshay";
 console.log(object);
 
 // 5)
 const dict = {
-    Hello: "Greeting",
-    yakka: "work, especially hard work.",
-    ataraxia: " a state of freedom from emotional disturbance and anxiety"
-}
-console.log(dict)
-console.log(dict.yakka)
-console.log(dict['yakka'])
+  Hello: "Greeting",
+  yakka: "work, especially hard work.",
+  ataraxia: " a state of freedom from emotional disturbance and anxiety",
+};
+console.log(dict);
+console.log(dict.yakka);
+console.log(dict["yakka"]);

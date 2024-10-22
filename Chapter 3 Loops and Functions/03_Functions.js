@@ -1,22 +1,22 @@
 const hello = () => {
-    console.log("Hii, I am Jayesh");
-}
+  console.log("Hii, I am Jayesh");
+};
 
 function average(x, y) {
-    return (x + y) / 2
+  return (x + y) / 2;
 }
 
 const sum = (p, q) => {
-    return p + q;
-}
+  return p + q;
+};
 
 const hii = () => {
-    return "Hii"
-}
+  return "Hii";
+};
 
 let a = 1;
-let b = 2
-let c = 3
+let b = 2;
+let c = 3;
 
 console.log("Average of a and b is ", average(a, b)); //1.5
 console.log("Average of b and c is ", average(b, c)); //2.5

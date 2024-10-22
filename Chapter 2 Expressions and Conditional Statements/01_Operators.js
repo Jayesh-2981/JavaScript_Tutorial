@@ -4,14 +4,14 @@ console.log("Operators in java");
 // +    addition
 // -    Subrtraction
 // *    Multiplication
-// **   Exponential 
+// **   Exponential
 // /    Division
 // %    Modulus
 // ++   Increment
 // --   Decrement
 
-let a = 45
-let b = 4
+let a = 45;
+let b = 4;
 console.log("Arithmatic Operators : ");
 console.log("a + b = ", a + b); //49
 console.log("a - b = ", a - b); //41
@@ -38,24 +38,24 @@ console.log("a % b = ", a % b); //1
 
 console.log("Assignment Operators : ");
 let assignment = 5;
-assignment += 5
+assignment += 5;
 console.log("assignment += ", assignment); //10
-assignment -= 5
+assignment -= 5;
 console.log("assignment -= ", assignment); //5
-assignment *= 5
+assignment *= 5;
 console.log("assignment *= ", assignment); //25
-assignment /= 5
+assignment /= 5;
 console.log("assignment /= ", assignment); //5
-assignment **= 5
+assignment **= 5;
 console.log("assignment **= ", assignment); //3125
-assignment %= 5
+assignment %= 5;
 console.log("assignment %= ", assignment); //0
 
 // 3) Comparison Operators
 
 // ==  equal to
 // !=  not equal
-// === equal value and type 
+// === equal value and type
 // !== not equal value or not equal type
 // >   Greater than
 // <   Less than
@@ -63,11 +63,11 @@ console.log("assignment %= ", assignment); //0
 // <=  Less than equal to
 // ?   Ternary operator
 
-console.log("Comparison operators : ")
+console.log("Comparison operators : ");
 let comp1 = 6;
-let comp2 = "6"
-let comp3 = 5
-let comp4 = 4
+let comp2 = "6";
+let comp3 = 5;
+let comp4 = 4;
 
 console.log("comp1 ==  comp2", comp1 == comp2); //true
 console.log("comp1 !=  comp2", comp1 != comp2); //false
@@ -81,7 +81,7 @@ console.log("comp3 <=  comp4", comp3 <= comp4); //false
 // 4) Logical Operators
 
 // &&  Logical and
-// ||  logical or 
+// ||  logical or
 // !   logical not
 
 console.log("Logical operators : ");

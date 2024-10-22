@@ -14,15 +14,20 @@
 // Solution 1) =>
 
 let marks = {
-    a: 98,
-    b: 43,
-    c: 34
-}
+  a: 98,
+  b: 43,
+  c: 34,
+};
 
 for (let i = 0; i < Object.keys(marks).length; i++) {
-    console.log("The marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]]);
+  console.log(
+    "The marks of " +
+      Object.keys(marks)[i] +
+      " are " +
+      marks[Object.keys(marks)[i]]
+  );
 }
-// Output: 
+// Output:
 // The marks of a are 98
 // The marks of b are 43
 // The marks of c are 34
@@ -30,7 +35,7 @@ for (let i = 0; i < Object.keys(marks).length; i++) {
 // Solution 2) =>
 
 for (const key in marks) {
-    console.log("The marks of " + key + " are " + marks[key]);
+  console.log("The marks of " + key + " are " + marks[key]);
 }
 
 // Output:
@@ -44,22 +49,22 @@ for (const key in marks) {
 let cn = 4;
 let i;
 while (i != cn) {
-    i = prompt("Enter a number")
+  i = prompt("Enter a number");
 }
 console.log("You have entered correct number");
 
 // Output:
-// You have entered correct number  
+// You have entered correct number
 
 // Note:Only when you entered correct number if you not enter correct number then it will keep asking for infinity...
 
 // Solution 4)=>
 
 const mean = (a, b, c, d, e) => {
-    return (a + b + c + d + e) / 5
-}
+  return (a + b + c + d + e) / 5;
+};
 
-console.log('mean of five numbers is : ' + mean(1, 2, 3, 4, 5));
+console.log("mean of five numbers is : " + mean(1, 2, 3, 4, 5));
 
 // Output:
 // mean of five numbers is : 3

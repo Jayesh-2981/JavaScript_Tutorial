@@ -14,20 +14,24 @@ console.log("Jay\"".length)
 
 // Solution 1) =>
 
-let str = "Jay\""
+let str = 'Jay"';
 console.log(str.length); //4
 
 // Solution 2) =>
 
-const sentence = 'The quick brown fox jumps over the lazy dog.'
-const word = 'fox';
+const sentence = "The quick brown fox jumps over the lazy dog.";
+const word = "fox";
 
 console.log(sentence.includes(word)); // true
 // includes()
-console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in the sentence`); // The word "fox" is in the sentence
+console.log(
+  `The word "${word}" ${
+    sentence.includes(word) ? "is" : "is not"
+  } in the sentence`
+); // The word "fox" is in the sentence
 
 // startsWith()
-console.log(sentence.startsWith('The')); //true
+console.log(sentence.startsWith("The")); //true
 
 // endsWith()
 console.log(sentence.endsWith(".")); //true
@@ -38,14 +42,14 @@ console.log(sentence.toLowerCase()); //the quick brown fox jumps over the lazy d
 
 // Solution 4) =>
 
-let str2 = "Please give Rs 1000"
-let amount = Number.parseInt(str2.slice("Please give Rs ".length))
+let str2 = "Please give Rs 1000";
+let amount = Number.parseInt(str2.slice("Please give Rs ".length));
 console.log(amount); //1000
 console.log(typeof amount); //number
 
 // Solution 5) =>
 
-let friend = "Akshay"
-friend[4] = "J"
+let friend = "Akshay";
+friend[4] = "J";
 console.log(friend); //Akshay
 // NOTE: friend is not changed, because string is immutable

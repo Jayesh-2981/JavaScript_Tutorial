@@ -17,48 +17,48 @@ if (age > 10 && age < 20) {
 
 // Solution 2 =>
 
-let age = 12
+let age = 12;
 switch (age) {
-    case 12:
-        console.log("Your age is 12");
-        break;
-    case 13:
-        console.log("Your age is 13");
-        break;
-    case 14:
-        console.log("Your age is 14");
-        break;
-    case 15:
-        console.log("Your age is 15");
-        break;
-    default:
-        console.log("Your age is not special");
+  case 12:
+    console.log("Your age is 12");
+    break;
+  case 13:
+    console.log("Your age is 13");
+    break;
+  case 14:
+    console.log("Your age is 14");
+    break;
+  case 15:
+    console.log("Your age is 15");
+    break;
+  default:
+    console.log("Your age is not special");
 }
 
 // Solution 3=>
 
-let num = 12
+let num = 12;
 if (num % 2 == 0 && num % 3 == 0) {
-    console.log("Number is divisible by 2 and 3");
+  console.log("Number is divisible by 2 and 3");
 } else {
-    console.log("Number is not divisible by 2 or 3");
+  console.log("Number is not divisible by 2 or 3");
 }
 
 // Solution 4=>
 
-let num2 = 15
+let num2 = 15;
 if (num2 % 2 == 0 && num2 % 3 == 0) {
-    console.log("Number is divisible by both 2 and 3");
+  console.log("Number is divisible by both 2 and 3");
 } else if (num2 % 2 == 0) {
-    console.log("Number is divisible by only 2");
+  console.log("Number is divisible by only 2");
 } else if (num2 % 3 == 0) {
-    console.log("Number is divisible by only 3");
+  console.log("Number is divisible by only 3");
 } else {
-    console.log("Number is not divisible by either 2 or 3");
+  console.log("Number is not divisible by either 2 or 3");
 }
 
 // Solution 5 =>
 
-let input = 19
+let input = 19;
 let a = input > 18 ? "You can drive" : "You cannot drive";
 console.log(a);

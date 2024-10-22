@@ -11,9 +11,9 @@
 
 - F12 on chrome opens Dev tools
 
-- Elements  => All HTML Elements
-- Console   => All the errors + logs
-- Network   => All network requests.
+- Elements => All HTML Elements
+- Console => All the errors + logs
+- Network => All network requests.
 
 - We can also write JavaScript commands in the Console.
 
@@ -36,15 +36,15 @@
 
 - The console object has several methods, log being one of them. Some of them are as follows:
 
-- assert()  => used to assert a condition
-- clear()   => clears the console
-- log()     => outputs a message to the console
-- table()   => Displays a tabular data (can be used for objects in key value pairs)
-- warn()    => used for warnings
-- error()   => used for special information
+- assert() => used to assert a condition
+- clear() => clears the console
+- log() => outputs a message to the console
+- table() => Displays a tabular data (can be used for objects in key value pairs)
+- warn() => used for warnings
+- error() => used for special information
 
 - By using console.log(console) in browser we can see all the methods of console object.
-Object [console] {
+  Object [console] {
   log: [Function: log],
   warn: [Function: warn],
   error: [Function: error],
@@ -63,27 +63,28 @@ Object [console] {
   debug: [Function: debug],
   info: [Function: info],
   dirxml: [Function: dirxml],
-  groupCollapsed: [Function: groupCollapsed],       
-  Console: [Function: Console],
+  groupCollapsed: [Function: groupCollapsed],  
+   Console: [Function: Console],
   profile: [Function: profile],
   profileEnd: [Function: profileEnd],
   timeStamp: [Function: timeStamp],
   context: [Function: context],
   createTask: [Function: createTask]
-}
+  }
 
 - comprehensive list can be looked up on MDN.
 
 **Interaction : alert, prompt and confirm**
 
-- alert     => Used to invoke a mini window with a message 
-    alert("hello")
+- alert => Used to invoke a mini window with a message
+  alert("hello")
 
-- prompt    => Used to take user input as String 
-    let input = prompt("Hii", "No")
-    - "No" :- optional default value
+- prompt => Used to take user input as String
+  let input = prompt("Hii", "No")
 
-- confirm   => Shows a message and waits for the user to press OK or Cancel. Returns true for Ok and false for cancel.
+  - "No" :- optional default value
+
+- confirm => Shows a message and waits for the user to press OK or Cancel. Returns true for Ok and false for cancel.
 
 - Example:-
 
@@ -93,29 +94,32 @@ a = Number.parseInt(a) //convert String into number
 alert("You entered a of type " + (typeof a)) //Display type of a
 let write = confirm("Do you want to write it to the page") // asks permission to write on page
 if (write) {
-    document.write(a) //if yes then print the value of a
+document.write(a) //if yes then print the value of a
 } else {
-    document.write("Please allow me to write") //if no then print this message
+document.write("Please allow me to write") //if no then print this message
 }
 
 - The exact location and look is determined by the browser which is a limitation.
 
 **Window object, BOM and DOM**
 
-- Window contains following things  => 
-1) DOM
-2) BOM
-3) Javascript Core
+- Window contains following things =>
+
+1. DOM
+2. BOM
+3. Javascript Core
 
 - Window object represents browser window and provides methods to control it.
 - It is a global object.
 
 **Document Object Model (DOM)**
+
 - Dom represents the page content as HTML
-    document.body   => Page body as JS object
-    document.body.style.background = "green"    => Changes page background to green
+  document.body => Page body as JS object
+  document.body.style.background = "green" => Changes page background to green
 
 **Browser Object Model (BOM)**
+
 - The Browser Object Model (BOM) represents additional objects provided by the browser (host environment) for working with everything except the document.
 - The functions alert/confirm/prompt are also a part of the BOM.
-    location.href = "https://google.com"    => Redirect to another URL
+  location.href = "https://google.com" => Redirect to another URL
