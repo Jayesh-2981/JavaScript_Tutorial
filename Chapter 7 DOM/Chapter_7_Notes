@@ -113,23 +113,29 @@
 - DOM navigation properties are helpful when the elements are close to each other.
 - If they are not close to each other, we have some more methods to search the DOM
 
-1) document.getElementById
-- This method is used to get the element with a given "id" attribute.
-    let span = document.getElementById('span')
-    span.style.color = "red"
+1. document.getElementById
 
-2) document.querySelectorAll
+- This method is used to get the element with a given "id" attribute.
+  let span = document.getElementById('span')
+  span.style.color = "red"
+
+2. document.querySelectorAll
+
 - Returns all elements inside an element matching the given CSS selector.
 
-3) document.querySelector
+3. document.querySelector
+
 - Returns the first element for the given CSS Selector.
 - A efficient version of elem.querySelectorAll(CSS)[0]
 
-4) document.getElementsByTagName
+4. document.getElementsByTagName
+
 - Returns elements with the given tag name.
 
-5) document.getElementsByClassName
+5. document.getElementsByClassName
+
 - Returns elements that have the given CSS class.
 
-6) document.getElementsByName
+6. document.getElementsByName
+
 - Searches elements by the name attribute.
