@@ -30,3 +30,97 @@
 <script>
     element.hidden =true;
 </script>
+
+**_Attribute Methods_**
+
+1. elem.hasAttribute(name) => Method to check for existence of an attribute.
+2. elem.getAttribute(name) => Method to used to get the value of an attribute.
+3. elem.setAttribute(name, value) => Method used to set the value of an attribute.
+4. elem.removeAttribute(name) => Method to remove the attribute from elem.
+5. elem.attributes => Method to get the collection of all attributes.
+
+**_data-asterisk attributes_**
+
+- We can always create custom attributes but the ones starting with "data-" are reserved for programmers use.
+- They are available in a property named dataset.
+- If an element has an attribute named "data-one", its available as element.dataset.one
+
+**_Insertion Methods_**
+
+- We looked at some ways to insert elements in the DOM.
+- Here is another way:
+
+  let div = document.createElement('div') //Create
+  div.className = "alert" //set Class
+  div.innerHTML = "<span>Hello</span>"
+  document.body.append(div)
+
+- Here are some more insertion methods:
+
+1. node.append(e) => append at the end of node
+2. node.prepend(e) => Insert at the begining of node
+3. node.before(e) => Insert before node
+4. node.after(e) => Insert after node
+5. node.replaceWith(e) => replaces node with the given node
+
+**_insertAdjacentHTML/Text/Element_**
+
+- This method is used to insert HTML.
+- The first parameter is a code word, specifying where to insert.
+- Must be one of the following:
+
+1. "beforebegin" => Insert HTML immediately
+2. "afterbegin" => Insert HTML into element at the begining
+3. "beforeend" => Insert HTML into element at the end
+4. "afterend" => Insert HTML immediately after element
+
+- The second parameter is an HTML string
+
+Example :-
+
+<div id = "div"></div>
+<script>
+    div.insertAdjacentHTML('beforebegin','<p>Hello</p>');
+    div.insertAdjacentHTML('afterend','<p>Bye</p>');
+</script>
+
+The output would be :-
+
+<p>Hello</p>
+<div id = "div"></div>
+<p>Bye</p>
+
+**_Node removal_**
+
+- To remove a node, there's a method node.remove()
+  let id1 = document.getElementById("id1")
+  id1.remove();
+
+**_ClassName and ClassList_**
+
+- If we assign something elem.className, it replaces the whole string of classes.
+- Often we want to add/remove/toggle a single class
+
+1. elem.classList.add/remove("class") => adds/removes a class
+2. elem.classList.toggle("class) => adds the class if it doesn't exist, otherwise removes it.
+3. elem.classList.contains("class") => Checks for the given class, returns true or false.
+
+**_setTimeout and setInterval_**
+
+- setTimeout allows us to run a function once after the interval of time.
+
+- Syntax of setTimeout is as follows:
+  let timerId = setTimeout(function,<delay>,<arg1>,<arg2>)
+  _timerId => returns a timer id_
+  _<delay> => in ms_
+
+- clearTimeout is used to cancel the execution (in case we change our mind)
+  let timeId = setTimeout((c) => alert("never"), 1000);
+  clearTimeout(timerId); => cancel the execution
+
+- setInterval method has a similar syntax as setTimeout:
+  let timeId = setInterval(function, <delay>,<arg1>,<arg2>)
+
+- All arguments have the same meaning. But unlike setTimeout, it runs the function not only once, but regulary after the given interval of time.
+
+- To stop further calls, we can use clearInterval(timerId)
