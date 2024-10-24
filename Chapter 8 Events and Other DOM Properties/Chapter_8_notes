@@ -124,3 +124,49 @@ The output would be :-
 - All arguments have the same meaning. But unlike setTimeout, it runs the function not only once, but regulary after the given interval of time.
 
 - To stop further calls, we can use clearInterval(timerId)
+
+**_Browser Events_**
+
+- An event is a signal that something has happened.
+- All the DOM nodes generate such signals.
+
+Some important DOM events are :-
+
+- _Mouse events_ => Click, contact menu(right click), mouseover/mouseout, mousedown/mouseup, mousemove
+
+- _Keyboad events_ => keydown and keyup
+
+- _form element events_ => submit, focus etc.
+
+- _Document events_ => DOMContentLoaded
+
+**_Handling Events_**
+
+- Events can be handled through HTML attributes.
+  <input value = "Hey" onclick = "alert('hey')" type = "button">
+
+- Events can also be handled through the onclick property
+  elem.onclick = function (){
+  alert("Yes");
+  }
+
+- _Note_ => Adding a handler with JavaScript overwrites the existing handler.
+
+**_addEventListener and removeEventListener_**
+
+- addEventListener is used to assign multiple handlers to an event.
+
+  element.addEventListener(event, handler)
+  element.removeEventListener(event, handler) _(handler must be the same function object for this to work)_
+
+**_The Event Object_**
+
+- When an event happens, the browser creates an event object, puts details into it and passes it as an argument to the handler.
+
+  elem.onclick = function(event){
+  ...
+  }
+
+- event.type : Event type
+- event currentTarget : Element that handled the event
+- event.clientX/event.clientY : Coordinates of the cursor

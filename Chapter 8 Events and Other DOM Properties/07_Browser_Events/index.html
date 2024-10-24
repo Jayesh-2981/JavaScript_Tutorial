@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Events</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="container"
+      onmouseenter="console.log('inside a container')"
+      onclick="console.log('clicked inside container');"
+      <!--
+      has
+      less
+      priority
+      than
+      js
+      onclick
+      function
+      --
+    >
+      <button onclick="alert('hello'); let a =6; console.log(a)">
+        Click me
+      </button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
