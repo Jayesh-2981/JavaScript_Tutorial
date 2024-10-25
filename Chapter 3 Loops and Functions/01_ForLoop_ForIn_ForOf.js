@@ -1,4 +1,4 @@
-//For loop =>
+//! For loop =>
 
 //Program to print first 500 numbers
 
@@ -16,7 +16,7 @@ console.log("Sum of first " + n + " natural numbers is " + sum); //Sum of first 
 
 // **************************************************************************
 
-// For in loop
+//! For in loop
 let obj = {
   a: 90,
   b: 45,
@@ -29,7 +29,7 @@ for (let a in obj) {
 
 // **************************************************************************
 
-//For of loop
+//! For of loop
 for (let b of "Jayesh") {
   console.log(b);
 }

@@ -1,4 +1,4 @@
-// Chapter 7 - Practice Set
+//! Chapter 7 - Practice Set
 
 /*
 1) Create a navbar and change the color of its first element to red.
@@ -13,20 +13,20 @@
 a) matches b) closest c) contains d) none of these
 */
 
-// Solution 1 =>
+//! Solution 1 =>
 document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red";
 
-// Solution 2 =>
+//! Solution 2 =>
 // No, Because tbody get auto correctd
 
-// Solution 3 =>
+//! Solution 3 =>
 document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green";
 document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green";
 
-// Solution 4 =>
+//! Solution 4 =>
 Array.from(document.getElementsByTagName("li")).forEach((element) => {
   element.style.background = "cyan";
 });
 
-// Solution 5 =>
+//! Solution 5 =>
 // (d) None of these, note: closest method gives closest element not the furthest element

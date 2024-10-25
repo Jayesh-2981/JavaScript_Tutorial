@@ -1,5 +1,6 @@
 console.log("Operators in java");
-// 1) Arithmetic Operator
+
+//! Arithmetic Operator
 
 // +    addition
 // -    Subrtraction
@@ -26,7 +27,7 @@ console.log("a % b = ", a % b); //1
 // console.log("a = ", a); //45
 // console.log("a-- = ", a--); //45
 
-// 2) Assignment Operator
+//! Assignment Operator
 
 // =   x=y
 // +=  x = x+y
@@ -51,17 +52,17 @@ console.log("assignment **= ", assignment); //3125
 assignment %= 5;
 console.log("assignment %= ", assignment); //0
 
-// 3) Comparison Operators
+//! Comparison Operators
 
 // ==  equal to
-// !=  not equal
+/* !=  not equal*/
 // === equal value and type
-// !== not equal value or not equal type
+/* !== not equal value or not equal type*/
 // >   Greater than
 // <   Less than
 // >=  Greater than equal to
 // <=  Less than equal to
-// ?   Ternary operator
+/* ?   Ternary operator */
 
 console.log("Comparison operators : ");
 let comp1 = 6;
@@ -78,11 +79,11 @@ console.log("comp3 <  comp4", comp3 < comp4); //false
 console.log("comp3 >=  comp4", comp3 >= comp4); //true
 console.log("comp3 <=  comp4", comp3 <= comp4); //false
 
-// 4) Logical Operators
+//! Logical Operators
 
 // &&  Logical and
 // ||  logical or
-// !   logical not
+/* !   logical not  */
 
 console.log("Logical operators : ");
 let x = 5;
@@ -96,4 +97,5 @@ console.log(!true); //false
 /*
 This is 
 Multi line 
-Comment */
+Comment 
+*/

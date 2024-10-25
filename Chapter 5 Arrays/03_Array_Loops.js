@@ -1,8 +1,10 @@
 let num = [1, 4, 3, 5, 46, 7, 5, 5];
 
-/*for (let i = 0; i < num.length; i++) {
-    console.log(num[i]);
-}*/
+/*
+for (let i = 0; i < num.length; i++) {
+  console.log(num[i]);
+}
+*/
 
 /* output:
 1
@@ -12,9 +14,10 @@ let num = [1, 4, 3, 5, 46, 7, 5, 5];
 46
 7
 5
-5 */
+5 
+*/
 
-//forEach loop
+//! forEach loop
 num.forEach((element) => {
   console.log(element);
 });
@@ -29,12 +32,12 @@ num.forEach((element) => {
 5
 5 */
 
-// Array.from
+//! Array.from
 let name = "Jayesh";
 let arr = Array.from(name);
 console.log(arr); //[ 'J', 'a', 'y', 'e', 's', 'h' ]
 
-// for...of
+//! for...of
 for (let i of num) {
   console.log(i);
 }
@@ -49,7 +52,7 @@ for (let i of num) {
 5
 5 */
 
-// for...in
+//! for...in
 for (let item in num) {
   // console.log(item) => it will give keys from 0 to num.length
   console.log(num[item]);

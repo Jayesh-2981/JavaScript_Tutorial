@@ -1,4 +1,4 @@
-//While Loop
+//! While Loop
 
 let n = 15;
 let i = 0;
@@ -7,7 +7,7 @@ while (i <= n) {
   i++;
 }
 
-//Do while loop
+//! Do while loop
 
 i = 0; //reinitializing the value of i
 do {

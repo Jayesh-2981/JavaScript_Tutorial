@@ -5,14 +5,14 @@ console.log(name1.length); //6
 let name2 = "Jayesh";
 console.log(name2); //Jayesh
 
-//Template literals
+//! Template literals
 let boy1 = "Pramod";
 let boy2 = "Nikhil";
 
 let sentence = `${boy2} is a friend of ${boy1}`;
 console.log(sentence); //Nikhil is a friend of Promod
 
-//Escape Sequence Characters
+//! Escape Sequence Characters
 // 1)   \'
 let fruit = "Bana'na";
 console.log(fruit); //Bana'na

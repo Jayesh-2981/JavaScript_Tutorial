@@ -1,3 +1,4 @@
+//! Chpater 4 - Practice Set
 /*
 1) What will be the following print in Javascript ?
 console.log("Jay\"".length)
@@ -12,12 +13,12 @@ console.log("Jay\"".length)
 5) Try to change 4th character of a given String. Were you able to do it ?
 */
 
-// Solution 1) =>
+//! Solution 1) =>
 
 let str = 'Jay"';
 console.log(str.length); //4
 
-// Solution 2) =>
+//! Solution 2) =>
 
 const sentence = "The quick brown fox jumps over the lazy dog.";
 const word = "fox";
@@ -36,18 +37,18 @@ console.log(sentence.startsWith("The")); //true
 // endsWith()
 console.log(sentence.endsWith(".")); //true
 
-// Solution 3) =>
+//! Solution 3) =>
 
 console.log(sentence.toLowerCase()); //the quick brown fox jumps over the lazy dog.
 
-// Solution 4) =>
+//! Solution 4) =>
 
 let str2 = "Please give Rs 1000";
 let amount = Number.parseInt(str2.slice("Please give Rs ".length));
 console.log(amount); //1000
 console.log(typeof amount); //number
 
-// Solution 5) =>
+//! Solution 5) =>
 
 let friend = "Akshay";
 friend[4] = "J";

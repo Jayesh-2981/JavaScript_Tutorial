@@ -1,4 +1,4 @@
-// Chapter 6 - Practice Set
+//! Chapter 6 - Practice Set
 /*
 1) Write a program using prompt
 
@@ -16,7 +16,7 @@ if the age entered is negative
 5) Change the background of the page yellow, red or any other color based on user input through prompt
 */
 
-// Solution 1, 2, 3 =>
+//! Solution 1, 2, 3 =>
 
 let runAgain = true;
 const canDrive = (age) => {
@@ -39,7 +39,7 @@ while (runAgain) {
   runAgain = confirm("Do you want to play again ?");
 }
 
-// Solution 4 =>
+//! Solution 4 =>
 
 let number = prompt("Enter your number");
 number = Number.parseInt(number);
@@ -48,7 +48,7 @@ if (number > 0) {
   location.href = "https://google.com";
 }
 
-// Solution 5 =>
+//! Solution 5 =>
 
 let color = prompt("Enter the page background color");
 document.body.style.background = color;

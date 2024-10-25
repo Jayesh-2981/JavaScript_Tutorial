@@ -1,4 +1,4 @@
-//Chapter 2 prcatice set
+//! Chapter 2 prcatice set
 
 // Q 1) Use logical operators to find whether the age of a person lies between 10 and 20 ?
 // Q 2) Demonstrate the use of switch case statements in javascript
@@ -6,7 +6,7 @@
 // Q 4) Write a javascript program to find whether a number is divisible by either 2 or 3.
 // Q 5) Print "You can Drive " or "You cannot drive" based on age being greater than 18 uding ternary operator.
 
-// Solution 1 =>
+//! Solution 1 =>
 
 /* let age = 16
 if (age > 10 && age < 20) {
@@ -15,7 +15,7 @@ if (age > 10 && age < 20) {
     console.log("Your age doesn't lies between 10 and 20");
 } */
 
-// Solution 2 =>
+//! Solution 2 =>
 
 let age = 12;
 switch (age) {
@@ -35,7 +35,7 @@ switch (age) {
     console.log("Your age is not special");
 }
 
-// Solution 3=>
+//! Solution 3=>
 
 let num = 12;
 if (num % 2 == 0 && num % 3 == 0) {
@@ -44,7 +44,7 @@ if (num % 2 == 0 && num % 3 == 0) {
   console.log("Number is not divisible by 2 or 3");
 }
 
-// Solution 4=>
+//! Solution 4=>
 
 let num2 = 15;
 if (num2 % 2 == 0 && num2 % 3 == 0) {
@@ -57,7 +57,7 @@ if (num2 % 2 == 0 && num2 % 3 == 0) {
   console.log("Number is not divisible by either 2 or 3");
 }
 
-// Solution 5 =>
+//! Solution 5 =>
 
 let input = 19;
 let a = input > 18 ? "You can drive" : "You cannot drive";

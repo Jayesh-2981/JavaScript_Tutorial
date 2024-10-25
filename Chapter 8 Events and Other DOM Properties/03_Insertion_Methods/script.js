@@ -4,17 +4,17 @@ let a = document.getElementsByTagName("div")[0];
 let div = document.createElement("div");
 div.innerHTML = "<h1>Hello World</h1>";
 
-// node.append(e)
+//! node.append(e)
 // a.append(div);
 
-// node.prepend(e)
+//! node.prepend(e)
 // a.prepend(div);
 
-// node.before(e)
+//! node.before(e)
 // a.before(div);
 
-// node.after(e)
+//! node.after(e)
 // a.after(div);
 
-// node.replaceWith(e)
+//! node.replaceWith(e)
 // a.replaceWith(div);
