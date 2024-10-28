@@ -6,10 +6,6 @@ let c = prompt("what is your favorite color ?");
 console.log(a + " is " + b + " years old and has " + c + " favorite color.");
 */
 
-console.log(
-  "********************************************************************"
-);
-
 //! Asyncronous Programming
 /*
 console.log("start");
@@ -18,10 +14,6 @@ setInterval(function () {
 }, 3000);
 console.log("end");
 */
-
-console.log(
-  "********************************************************************"
-);
 
 //! Callbacks
 function loadScript(src, callback) {
