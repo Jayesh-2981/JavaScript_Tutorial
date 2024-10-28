@@ -15,10 +15,6 @@ setInterval(function () {
 console.log("end");
 */
 
-console.log(
-  "********************************************************************"
-);
-
 //! Callbacks
 function loadScript(src, callback) {
   let script = document.createElement("script");
