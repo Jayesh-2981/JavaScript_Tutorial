@@ -46,3 +46,17 @@
   script loaded
   }
   });
+
+**_Pyramid of Doom_**
+
+- When we have callback inside callbacks, the code gets difficult to manage.
+  loadScript((...){
+  loadScript(...
+  loadScript...
+  loadScript...
+  })
+
+- As calls become more nested, the code becomes deeper and increasingly more difficult to manage, especially if we have real code instead of...
+- This is sometimes called "callback hell" or "Pyramid of doom".
+- The "pyramid" of these calls grows towards the right with every asynchronous action.
+- Soon it spirals out of control. So this way of coding isn't good!
