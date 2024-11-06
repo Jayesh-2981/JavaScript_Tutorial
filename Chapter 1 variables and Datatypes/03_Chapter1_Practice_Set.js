@@ -1,39 +1,72 @@
-/* Q1) Create a variable of type string and try to add a number to it.
-Q2) Use typeof Operator to find the datatype of the String in last question.
-Q3) Create a const object in javascript. Can you change it to hold a number later?
-04) Try to add a new key to the const object in problem 3.
-Q5) Write a js program to create a word-meaning dictionary of 5 words.
+console.log("Solutions =>");
+
+// 1) Create a string and try to add a number to it
+let a = "Jayesh"; // String variable
+let b = 9; // Number variable
+console.log(a + b);
+/* Output:
+"Jayesh9" 
+The number 9 is automatically converted to a string and concatenated with "Jayesh".
 */
 
-console.log("Solutions =>");
-// 1)
-let a = "Jayesh";
-let b = 9;
-console.log(a + b);
-
-// 2)
+// 2) Use typeof operator to find the datatype of the result of string + number
 console.log(typeof (a + b));
+/* Output:
+"string" 
+Since the result of string concatenation is a string, typeof returns "string".
+*/
 
-// 3)
+// 3) Create a const object. Can we change it to hold a number later?
 const object = {
-  name: "Jayesh",
-  section: 1,
-  isPrincipal: false,
+  name: "Jayesh", // key-value pair: name
+  section: 1, // key-value pair: section
+  isPrincipal: false, // key-value pair: isPrincipal
 };
 
-//object = "JD" //Error
+// object = "JD"; // Uncommenting this line will throw an error because the object itself is constant and cannot be reassigned.
 
-// 4)
-object["name"] = "JD";
-object["friend"] = "Akshay";
+// 4) Try to add a new key to the const object
+object["name"] = "JD"; // Reassigning the 'name' key in the object
+object["friend"] = "Akshay"; // Adding a new key-value pair to the object
 console.log(object);
+/* Output:
+{
+  name: 'JD', 
+  section: 1, 
+  isPrincipal: false, 
+  friend: 'Akshay'
+} 
+The object reference cannot be reassigned, but its properties can be modified.
+*/
 
-// 5)
+// 5) Create a word-meaning dictionary of 5 words
 const dict = {
-  Hello: "Greeting",
-  yakka: "work, especially hard work.",
-  ataraxia: " a state of freedom from emotional disturbance and anxiety",
+  Hello: "Greeting", // word: meaning pair
+  yakka: "work, especially hard work.", // word: meaning pair
+  ataraxia: "a state of freedom from emotional disturbance and anxiety", // word: meaning pair
+  solace: "comfort or consolation in a time of distress or sadness", // word: meaning pair
+  serenity: "the state of being calm, peaceful, and untroubled", // word: meaning pair
 };
+
 console.log(dict);
+/* Output:
+{
+  Hello: 'Greeting',
+  yakka: 'work, especially hard work.',
+  ataraxia: 'a state of freedom from emotional disturbance and anxiety',
+  solace: 'comfort or consolation in a time of distress or sadness',
+  serenity: 'the state of being calm, peaceful, and untroubled'
+}
+*/
+
+// Accessing meaning of a word using dot notation
 console.log(dict.yakka);
+/* Output:
+"work, especially hard work."
+*/
+
+// Accessing meaning of a word using bracket notation
 console.log(dict["yakka"]);
+/* Output:
+"work, especially hard work."
+*/
