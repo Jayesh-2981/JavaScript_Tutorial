@@ -27,16 +27,16 @@ while (runAgain) {
   age = Number.parseInt(age);
 
   if (age < 0) {
-    console.error("please enter a valid age");
+    console.error("Please enter a valid age");
     break;
   }
 
   if (canDrive(age)) {
-    alert("Yes you can drive!");
+    alert("Yes, you can drive!");
   } else {
     alert("You cannot drive!");
   }
-  runAgain = confirm("Do you want to play again ?");
+  runAgain = confirm("Do you want to play again?");
 }
 
 //! Solution 4 =>
@@ -44,11 +44,11 @@ while (runAgain) {
 let number = prompt("Enter your number");
 number = Number.parseInt(number);
 
-if (number > 0) {
-  location.href = "https://google.com";
+if (number > 4) {
+  location.href = "https://google.com"; // Redirect to google.com
 }
 
 //! Solution 5 =>
 
 let color = prompt("Enter the page background color");
-document.body.style.background = color;
+document.body.style.background = color; // Change background color based on user input
