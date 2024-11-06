@@ -15,39 +15,51 @@ let a = 45; // Variable a is set to 45
 let b = 4; // Variable b is set to 4
 console.log("Arithmetic Operators : ");
 console.log("a + b = ", a + b);
-/* Output:
-49 
-This is the addition of a and b.
+/* 
+! Output:
+! 49 
+* Explanation: 
+* This is the addition of a and b.
 */
 
 console.log("a - b = ", a - b);
-/* Output:
-41 
-This is the subtraction of b from a.
+/* 
+! Output:
+! 41 
+* Explanation: 
+* This is the subtraction of b from a.
 */
 
 console.log("a * b = ", a * b);
-/* Output:
-180 
-This is the multiplication of a and b.
+/* 
+! Output:
+! 180 
+* Explanation: 
+* This is the multiplication of a and b.
 */
 
 console.log("a / b = ", a / b);
-/* Output:
-11.25 
-This is the division of a by b.
+/* 
+! Output:
+! 11.25 
+* Explanation: 
+* This is the division of a by b.
 */
 
 console.log("a ** b = ", a ** b);
-/* Output:
-4100625 
-This is a raised to the power of b.
+/* 
+! Output:
+! 4100625 
+* Explanation: 
+* This is a raised to the power of b.
 */
 
 console.log("a % b = ", a % b);
-/* Output:
-1 
-This is the modulus (remainder) when a is divided by b.
+/* 
+! Output:
+! 1 
+* Explanation: 
+* This is the modulus (remainder) when a is divided by b.
 */
 
 // The following increment and decrement operations are commented out
@@ -72,44 +84,56 @@ console.log("Assignment Operators : ");
 let assignment = 5; // Variable assignment is initially 5
 assignment += 5;
 console.log("assignment += ", assignment);
-/* Output:
-10 
-This adds 5 to assignment.
+/* 
+! Output:
+! 10 
+* Explanation: 
+* This adds 5 to assignment.
 */
 
 assignment -= 5;
 console.log("assignment -= ", assignment);
-/* Output:
-5 
-This subtracts 5 from assignment.
+/* 
+! Output:
+! 5 
+* Explanation: 
+* This subtracts 5 from assignment.
 */
 
 assignment *= 5;
 console.log("assignment *= ", assignment);
-/* Output:
-25 
-This multiplies assignment by 5.
+/* 
+! Output:
+! 25 
+* Explanation: 
+* This multiplies assignment by 5.
 */
 
 assignment /= 5;
 console.log("assignment /= ", assignment);
-/* Output:
-5 
-This divides assignment by 5.
+/* 
+! Output:
+! 5 
+* Explanation: 
+* This divides assignment by 5.
 */
 
 assignment **= 5;
 console.log("assignment **= ", assignment);
-/* Output:
-3125 
-This raises assignment to the power of 5.
+/* 
+! Output:
+! 3125 
+* Explanation: 
+* This raises assignment to the power of 5.
 */
 
 assignment %= 5;
 console.log("assignment %= ", assignment);
-/* Output:
-0 
-This assigns the remainder when assignment is divided by 5 to assignment.
+/* 
+! Output:
+! 0 
+* Explanation: 
+* This assigns the remainder when assignment is divided by 5 to assignment.
 */
 
 //! Comparison Operators
@@ -131,51 +155,67 @@ let comp3 = 5; // Variable comp3 is set to 5
 let comp4 = 4; // Variable comp4 is set to 4
 
 console.log("comp1 == comp2", comp1 == comp2);
-/* Output:
-true 
-comp1 and comp2 have the same value (after type coercion), so this returns true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* comp1 and comp2 have the same value (after type coercion), so this returns true.
 */
 
 console.log("comp1 != comp2", comp1 != comp2);
-/* Output:
-false 
-comp1 and comp2 have the same value after type coercion, so this returns false.
+/* 
+! Output:
+! false 
+* Explanation: 
+* comp1 and comp2 have the same value after type coercion, so this returns false.
 */
 
 console.log("comp1 === comp2", comp1 === comp2);
-/* Output:
-false 
-comp1 and comp2 have different types, so this returns false.
+/* 
+! Output:
+! false 
+* Explanation: 
+* comp1 and comp2 have different types, so this returns false.
 */
 
 console.log("comp1 !== comp2", comp1 !== comp2);
-/* Output:
-true 
-comp1 and comp2 have different types, so this returns true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* comp1 and comp2 have different types, so this returns true.
 */
 
 console.log("comp3 > comp4", comp3 > comp4);
-/* Output:
-true 
-comp3 is greater than comp4, so this returns true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* comp3 is greater than comp4, so this returns true.
 */
 
 console.log("comp3 < comp4", comp3 < comp4);
-/* Output:
-false 
-comp3 is not less than comp4, so this returns false.
+/* 
+! Output:
+! false 
+* Explanation: 
+* comp3 is not less than comp4, so this returns false.
 */
 
 console.log("comp3 >= comp4", comp3 >= comp4);
-/* Output:
-true 
-comp3 is greater than or equal to comp4, so this returns true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* comp3 is greater than or equal to comp4, so this returns true.
 */
 
 console.log("comp3 <= comp4", comp3 <= comp4);
-/* Output:
-false 
-comp3 is not less than or equal to comp4, so this returns false.
+/* 
+! Output:
+! false 
+* Explanation: 
+* comp3 is not less than or equal to comp4, so this returns false.
 */
 
 //! Logical Operators
@@ -189,27 +229,35 @@ let x = 5; // Variable x is set to 5
 let y = 6; // Variable y is set to 6
 
 console.log(x < y && x == 5);
-/* Output:
-true 
-Both conditions are true, so the result is true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* Both conditions are true, so the result is true.
 */
 
 console.log(x > y || x == 5);
-/* Output:
-true 
-At least one condition is true, so the result is true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* At least one condition is true, so the result is true.
 */
 
 console.log(!false);
-/* Output:
-true 
-The NOT operator reverses the truthiness, so false becomes true.
+/* 
+! Output:
+! true 
+* Explanation: 
+* The NOT operator reverses the truthiness, so false becomes true.
 */
 
 console.log(!true);
-/* Output:
-false 
-The NOT operator reverses the truthiness, so true becomes false.
+/* 
+! Output:
+! false 
+* Explanation: 
+* The NOT operator reverses the truthiness, so true becomes false.
 */
 
 // This is a single-line comment
