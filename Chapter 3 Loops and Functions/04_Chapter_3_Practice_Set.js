@@ -28,12 +28,12 @@ for (let i = 0; i < Object.keys(marks).length; i++) {
   );
 }
 /*
-Output:
-The marks of a are 98
-The marks of b are 43
-The marks of c are 34
-Explanation: 
-The for loop iterates through each key in the `marks` object using `Object.keys(marks)`, and prints each student's mark.
+! Output:
+! The marks of a are 98
+! The marks of b are 43
+! The marks of c are 34
+* Explanation: 
+* The for loop iterates through each key in the `marks` object using `Object.keys(marks)`, and prints each student's mark.
 */
 
 //! Solution 2 => Print marks using a for...in loop
@@ -42,12 +42,12 @@ for (const key in marks) {
   console.log("The marks of " + key + " are " + marks[key]);
 }
 /*
-Output:
-The marks of a are 98
-The marks of b are 43
-The marks of c are 34
-Explanation: 
-The for...in loop iterates through each key in the `marks` object directly, making it simpler and more readable.
+! Output:
+! The marks of a are 98
+! The marks of b are 43
+! The marks of c are 34
+* Explanation: 
+* The for...in loop iterates through each key in the `marks` object directly, making it simpler and more readable.
 */
 
 //! Solution 3 => Program to keep prompting until the correct number is entered
@@ -60,10 +60,10 @@ while (userInput != correctNumber) {
 }
 console.log("You have entered the correct number");
 /*
-Output:
-You have entered the correct number
-Explanation: 
-The loop continues to prompt the user until they enter the correct number. When the correct number is entered, it exits the loop and logs a success message.
+! Output:
+! You have entered the correct number
+* Explanation: 
+* The loop continues to prompt the user until they enter the correct number. When the correct number is entered, it exits the loop and logs a success message.
 Note: This will prompt indefinitely if the number entered is not correct, only ending when the user enters 4.
 */
 
@@ -75,8 +75,8 @@ const mean = (a, b, c, d, e) => {
 
 console.log("Mean of five numbers is: " + mean(1, 2, 3, 4, 5));
 /*
-Output:
-Mean of five numbers is: 3
-Explanation: 
-The `mean` function takes five numbers, calculates the mean by summing them and dividing by 5, and logs the result.
+! Output:
+! Mean of five numbers is: 3
+* Explanation: 
+* The `mean` function takes five numbers, calculates the mean by summing them and dividing by 5, and logs the result.
 */
