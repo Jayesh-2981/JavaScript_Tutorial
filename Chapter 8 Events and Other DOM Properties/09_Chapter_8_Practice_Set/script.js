@@ -28,19 +28,19 @@
 //! Solution 3 - Bookmarks with event listeners
 /*
 document.getElementById("google").addEventListener("click", function () {
-  //! Redirects to Google
+  ! Redirects to Google
   window.location = "https://www.google.com";
   window.focus(); // Focuses on the new page
 });
 
 document.getElementById("facebook").addEventListener("click", function () {
-  //! Redirects to Facebook
+  ! Redirects to Facebook
   window.location = "https://www.facebook.com";
   window.focus();
 });
 
 document.getElementById("instagram").addEventListener("click", function () {
-  //! Redirects to Instagram
+  ! Redirects to Instagram
   window.location = "https://www.instagram.com";
   window.focus();
 });

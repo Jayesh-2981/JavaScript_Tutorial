@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "checkJs": true
+    },
+    "include": [
+        "**/*.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.js"
+    ]
+}
