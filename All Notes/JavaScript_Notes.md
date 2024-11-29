@@ -1,24 +1,25 @@
-<br>
-<h1 align="center">JAVASCRIPT NOTES</h1>
+<style>
+  body {
+    text-align: justify;
+  }
+</style>
 
-## <center>Chapter 1 - Variables and Data</center>
+<h1 style="text-align:center">JAVASCRIPT NOTES</h1>
 
-<b><center>Just like we follow some rules while speaking english (The grammer), we have some rules to follow while writing a javascript program. The set of these rules is called syntax in javascript.</center></b>
+## Chapter 1 - Variables and Data
 
-<hr style="width: 50%; margin: auto;">
+<b>Just like we follow some rules while speaking english (The grammer), we have some rules to follow while writing a javascript program. The set of these rules is called syntax in javascript.</b>
 
 ### What is a variable ?
 
 - A variable is a container that stores a value.
-- The value of a javascript variable can be changed during the execution of a program. <br>
+- The value of a javascript variable can be changed during the execution of a program.
 
-  ```
+  ```javascript
   var a = 7;
   let b = 7;
   const c = 7;
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Rules of Choosing variable names
 
@@ -26,8 +27,6 @@
 - Must begin with a `$`, `_` or a letter.
 - Javascript reserverd words cannot be used as a variable name.
 - Jayesh and jaYEsh are different variables (Case Sensitive).
-
-<hr style="width: 50%; margin: auto;">
 
 ### Var vs let vs const in javascript
 
@@ -38,8 +37,6 @@
 - Var variables are intialized with undefined whereas let and const variables are not initialized.
 - Const must be intialized during declaration unlike let and var.
 
-<hr style="width: 50%; margin: auto;">
-
 ### Primitive Data types and objects
 
 - Primitive data types are a set of basic datatypes in javascript.
@@ -47,27 +44,21 @@
 - There are seven primitive datatypes in javascript
   null, number, string, symbol, undefined, boolean, BitInt
 
-<hr style="width: 50%; margin: auto;">
-
 ### Object
 
 - An object in javascript can be created as follows.<br>
 
-  ```
+  ```javascript
   const item = {
-  name : "LED Bulb",
-  price : "150"
-  }
+    name: "LED Bulb",
+    price: "150",
+  };
   ```
 
----
+## Chapter 2 - Expressions and Conditional Statements
 
-## <center> Chapter 2 - Expressions and Conditional Statements </center>
-
-<b> <center> A fragment of code that produces a value is called an expression. Every value written literally is an expression
-eg. 77 or "Jayesh". </center> </b>
-
-<hr style="width: 50%; margin: auto;">
+<b> A fragment of code that produces a value is called an expression. Every value written literally is an expression
+eg. 77 or "Jayesh". </b>
 
 ### Operators in Javascript
 
@@ -254,31 +245,29 @@ eg. 77 or "Jayesh". </center> </b>
 
 - Apart from these, we also have type and bitwise operators. Bitwise operators perform bit by bit operations of numbers.
 
-<hr style="width: 50%; margin: auto;">
-
 ### Comments in JavaScript
 
 - Sometimes we want out programs to contain a text which is not executed by the JS engine.
 - Such a text is called comment in JavaScript.
 - A comment in JavaScript can be written as follows:
 
-  `let a = 2; //This is single line Comment`
-
+  ```javascript
+  let a = 2; //This is single line Comment
   ```
+
+  ```javascript
   /*
   I am a
   multiline comment
   */
   ```
 
-- Sometimes comments are used to prevent the execution of some lines of code.<br>
+- Sometimes comments are used to prevent the execution of some lines of code.
 
-  ```
+  ```javascript
   let switch = true;
   // switch = false; => Commented line won't execute.
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Conditional Statements
 
@@ -294,9 +283,9 @@ eg. 77 or "Jayesh". </center> </b>
 
 - The if statement in javascript looks like this:
 
-  ```
-  if(Condition){
-  //execute this code
+  ```javascript
+  if (Condition) {
+    //execute this code
   }
   ```
 
@@ -307,14 +296,15 @@ eg. 77 or "Jayesh". </center> </b>
 
 - The if statement can have an optional else clause.
 - The syntax looks something like this
-  ```
-  if(condition){
-  //block of code if condition is true
+
+  ```javascript
+  if (condition) {
+    //block of code if condition is true
+  } else {
+    // block of code if condtition is false
   }
-  else{
-  // block of code if condtition is false
-  }
   ```
+
 - if the condition is true, code inside if is executed else code inside else block is executed.
 
 #### if...else if...else statement
@@ -323,7 +313,7 @@ eg. 77 or "Jayesh". </center> </b>
 - We use if elseif for achieving this.
 - Syntax of if...elseif looks like this <br>
 
-  ```
+  ```javascript
     if (age>0) {
         consol.log("A valid age")
 
@@ -338,25 +328,23 @@ eg. 77 or "Jayesh". </center> </b>
     }
   ```
 
-<hr style="width: 50%; margin: auto;">
-
 ### Javascript Ternary Operator
 
 - Evaluates a condition and executes a block of code based on the condition.
 
-  ` Condition ? exp1: exp2`
+  ```javascript
+  Condition ? exp1 : exp2;
+  ```
 
 - Example:-
 
-  `(marks>10)?'Yes':'No'`
+  ```javascript
+  marks > 10 ? "Yes" : "No";
+  ```
 
----
+## Chapter 3 - Loops and Functions
 
-## <center> Chapter 3 - Loops and Functions </center>
-
-<b> <center> We use loops to perform repeated actions. For Example - If you are assigned a task of printing numbers from 1 to 100, it will be very hectic to do it mannually, Loops help us automate such tasks. </center> </b>
-
-<hr style="width: 50%; margin: auto;">
+<b> We use loops to perform repeated actions. For Example - If you are assigned a task of printing numbers from 1 to 100, it will be very hectic to do it mannually, Loops help us automate such tasks. </b>
 
 ### Types of loops in Javascript
 
@@ -370,13 +358,11 @@ eg. 77 or "Jayesh". </center> </b>
 
 **5.** do -while loop => while loop variant which runs atleast once.
 
-<hr style="width: 50%; margin: auto;">
-
 ### The for loop
 
 - The syntax of a for loop looks something like this
 
-  ```
+  ```javascript
   for(Statement 1; Statement 2; Statement 3){
   //code to be executed
   }
@@ -388,174 +374,171 @@ eg. 77 or "Jayesh". </center> </b>
 
 - Example : Program to print first 500 numbers
 
-  ```
+  ```javascript
   for (let i = 1; i < 500; i++) {
-  console.log(i);
+    console.log(i);
   }
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### The for in loop
 
 - The syntax of for in loop looks like this
 
-  ```
-  for(key in object){
-  //code to be executed
+  ```javascript
+  for (key in object) {
+    //code to be executed
   }
   ```
 
 - Exmple :
-  ```
-  let obj = {
-  a: 90,
-  b: 45,
-  c: 34,
-  d: 78
-  }
-  for (let a in obj) {
-  console.log("Marks of " + a + " are " + obj[a]);
-  }
-  ```
 
-<hr style="width: 50%; margin: auto;">
+  ```javascript
+  let obj = {
+    a: 90,
+    b: 45,
+    c: 34,
+    d: 78,
+  };
+  for (let a in obj) {
+    console.log("Marks of " + a + " are " + obj[a]);
+  }
+  ```
 
 ### The for of loop
 
 - The syntax of for-of loop looks like this
 
-  ```
-  for(variable of iterable){
-  //code
-  //(iterable) => Iterable data structure like Arrays, Strings etc.
+  ```javascript
+  for (variable of iterable) {
+    //code
+    //(iterable) => Iterable data structure like Arrays, Strings etc.
   }
   ```
 
 - Example :
-  ```
+
+  ```javascript
   for (let b of "Jayesh") {
-  console.log(b)
+    console.log(b);
   }
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### The while loop
 
 - The syntax of while loop looks like this:
 
-  ```
-  while(condition){
-  //code to be executed
+  ```javascript
+  while (condition) {
+    //code to be executed
   }
   ```
 
 - **Note**: If the condition never becomes false, the loop wiil never end and this might crash the function.
 
 - Example :
-  ```
+
+  ```javascript
   let n = 15;
   let i = 0;
   while (i <= n) {
-  console.log(i);
-  i++;
+    console.log(i);
+    i++;
   }
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### The do-while loop
 
 - The do while loop's syntax looks like this:
-  ```
-  do{
-  //code to be executed => Executed at least once
-  }while(condition)
-  ```
 
-<hr style="width: 50%; margin: auto;">
+  ```javascript
+  do {
+    //code to be executed => Executed at least once
+  } while (condition);
+  ```
 
 ### Functions in Javascript
 
 - A javascript function is a block of code designed to perform a particular task.
 - Syntax pf a function looks something like this:
 
-  ```
+  ```javascript
   //Function without parameter
   function myFunc(){
   //code
   }
-  myFunc() => Function invocation
+  myFunc() // Function invocation
 
   //Function with parameter
   function myFunc2(parameter 1, parameter 2){
   //code
    //Here the parameter behaves like local variables.
   }
-  myFunc2(1,2) => Function invocation
+  myFunc2(1,2) // Function invocation
   ```
 
 - Function invocation is a way to use the code inside the function
 - A function can also return a value. The value is 'returned' back to the caller.
 
+  ```javascript
+  const sum = (a, b) => {
+    let c = a + b;
+    return c; // Returns the sum
+  };
+
+  let y = sum(1, 3);
+  consol.log(y); //prints 4
   ```
-  const sum =(a,b)=>{
-  let c = a+b;
-  return c; // Returns the sum
-  }
 
-  let y = sum(1,3)
-  consol.log(y) //prints 4
-  ```
+## Chapter 4 - Strings
 
----
-
-## <center> Chapter 4 - Strings </center>
-
-<center><b>Strings are used to store and manipulate text.</b></center>
-
-<hr style="width: 50%; margin: auto;">
-<br>
+<b>Strings are used to store and manipulate text.</b>
 
 - String can be created using the following syntax.
 
-  ```
-  let name = "Jayesh" //creates a string
-  name.length // This property prints the length of the string
+  ```javascript
+  let name = "Jayesh"; //creates a string
+  name.length; // This property prints the length of the string
   ```
 
 - Strings can also be created using single quotes.
 
-  `let name = 'Jayesh'`
-
-<hr style="width: 50%; margin: auto;">
+  ```javascript
+  let name = "Jayesh";
+  ```
 
 ### Template literals
 
 - Template literals use backtics instead of quotes to define a string.
 
-  ``let name = `Jayesh` ``
+  ```javascript
+  let name = `Jayesh`;
+  ```
 
 - With template literals, it is possible to use both single as well as double quotes inside a string.
 
-  ``let sentence = `The name 'is' "Jayesh"` ``
+  ```javascript
+  let sentence = `The name 'is' "Jayesh"`;
+  ```
 
 - We can insert variables ditectly in template literal. This is called String interpolation.
 
-  ``let a = `This is ${name}` ``//Prints This is Jayesh
-
-<hr style="width: 50%; margin: auto;">
+  ```javascript
+  let a = `This is ${name}`; //Prints This is Jayesh
+  ```
 
 ### Escape Sequence Characters
 
 - if you try to print the following string, javascript will misunderstand it
 
-  `let name = 'Adam D'Angelo'`
+  ```javascript
+  let name = 'Adam D'Angelo'
+  ```
 
 - We can use single quote escape sequence to solve the problem.
 
-  `let name = 'Adam D\'Angelo'`
+  ```javascript
+  let name = "Adam D'Angelo";
+  ```
 
 - Similarly we can use `\"` inside a String with double quotes
 - Other escape sequence characters are as follows
@@ -563,10 +546,9 @@ eg. 77 or "Jayesh". </center> </b>
   2. `\t` => Tab
   3. `\r` => Carriage Return
 
-<hr style="width: 50%; margin: auto;">
-
 ### String Properties and Methods
 
+```javascript
 - let name = "Jayesh"
   name.length //6
 
@@ -591,147 +573,136 @@ eg. 77 or "Jayesh". </center> </b>
 
 - let name = " Jayesh "
   let newName = name.trim() //Jayesh//Removes whitespaces
+```
 
 - Strings are immutable.
 - In order to access the character at an index we use the following syntax.
 
+  ```javascript
+  let name = "Jayesh";
+  console.log(name[0]); //J
+  console.log(name[1]); //a
   ```
-  let name = "Jayesh"
-  console.log(name[0]) //J
-  console.log(name[1]) //a
-  ```
 
----
+## Chapter 5 - Arrays
 
-## <center> Chapter 5 - Arrays </center>
+<b>Arrays are variables which can hold more than one value. </b>
 
-<b><center> Arrays are variables which can hold more than one value.</center> </b>
-
-<hr style="width: 50%; margin: auto;">
-<br>
-
+```javascript
+const fruits = ["banana", "apple", "grapes"];
+const a1 = [7, "Jayesh", false]; //can be different types
 ```
-const fruits = ["banana", "apple", "grapes"]
-const a1 = [7, "Jayesh", false] //can be different types
-```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Accessing Values
 
+```javascript
+let numbers = [1, 2, 7, 9];
+numbers[0]; //1
+numbers[1]; //2
 ```
-let numbers = [1,2,7,9]
-numbers[0] //1
-numbers[1] //2
-```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Finding the length
 
+```javascript
+let numbers = [1, 7, 9, 21];
+numbers[0]; //1
+numbers.length; //4
 ```
-let numbers = [1,7,9,21]
-numbers[0] //1
-numbers.length //4
-```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Changing the values
 
-```
-let numbers = [7,2,40,9]
-numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
+```javascript
+let numbers = [7, 2, 40, 9];
+numbers[2] = 8; //"Numbers" now becomes [7,2,8,9]
 ```
 
 - Arrays are mutable
 - Arrays can be changed
 - In JS, arrays are objects.
 - The type of operator of arrays returns object.
-  ```
+
+  ```javascript
   const n = [1,7,9]
   type of n //returns "object"
   ```
-- Arrays can hold many values under a single name.
 
-<hr style="width: 50%; margin: auto;">
+- Arrays can hold many values under a single name.
 
 ### Array Methods
 
 - There are some important array methods in JavaScript. Some of them are as follows:
 
-1. **toString()** => converts an array to a string of comma separated values.
+1. **toString()** : converts an array to a string of comma separated values.
 
-   ```
-   let n = [1,7,9]
-   n.toString() // 1,7,9
-   ```
-
-2. **join()** => joins all the array elements using a separator
-
-   ```
-   let n = [7,9,13]
-   n.join("-") // 7-9-13
+   ```javascript
+   let n = [1, 7, 9];
+   n.toString(); // 1,7,9
    ```
 
-3. **pop()** => removes last element from the array
+2. **join()** : joins all the array elements using a separator
+
+   ```javascript
+   let n = [7, 9, 13];
+   n.join("-"); // 7-9-13
    ```
-   let n = [1,2,4]
-   n.pop()
+
+3. **pop()** : removes last element from the array
+
+   ```javascript
+   let n = [1, 2, 4];
+   n.pop();
    ```
 
 - updates the original array
 - returns the popped value
 
-4. **push()** => Adds a new element at the end of the array
-   ```
-   let a = [7,1,2,8]
-   a.push(9)
+4. **push()** : Adds a new element at the end of the array
+   ```javascript
+   let a = [7, 1, 2, 8];
+   a.push(9);
    ```
 
 - modifies the original array
 - returns the new array length
 
-5. **shift()** =>
-   ```
-   let a = [7,1,2,8]
-   a.shift()
+5. **shift()** : removes the first element and returns it
+
+   ```javascript
+   let a = [7, 1, 2, 8];
+   a.shift();
    ```
 
-- removes the first element and returns it
+6. **unshift()** : Adds element to the begining, returns new array length
 
-6. **unshift()** =>
-   ```
-   let a = [7,1,2,8]
-   a.unshift(5)
-   ```
-
-- Adds element to the begining
-- Returns new array length
-
-7. **delete()** => Array elements can be deleted using the delete operator
-   ```
-   let d = [1,2,3,4]
-   delete d[1]
+   ```javascript
+   let a = [7, 1, 2, 8];
+   a.unshift(5);
    ```
 
-- delete is an operator
+7. **delete()** : Array elements can be deleted using the delete operator, delete is an operator
 
-8. **concat()** => Used to join arrays to the given array
+   ```javascript
+   let d = [1, 2, 3, 4];
+   delete d[1];
    ```
-   let a1 = [1,2,3]
-   let a2 = [4,5,6]
-   let a3 = [7,8,9]
-   a1.concat(a2,a3) // returns [1,2,3,4,5,6,7,8,9]
+
+8. **concat()** : Used to join arrays to the given array
+
+   ```javascript
+   let a1 = [1, 2, 3];
+   let a2 = [4, 5, 6];
+   let a3 = [7, 8, 9];
+   a1.concat(a2, a3); // returns [1,2,3,4,5,6,7,8,9]
    ```
 
 - returns a new array
 - does not change existing arrays
 
-9. **Sort()** => sort() method is used to sort an array alphabetically.
-   ```
-   let a = [7,9,8]
-   a.sort()
+9. **Sort()** : sort() method is used to sort an array alphabetically.
+
+   ```javascript
+   let a = [7, 9, 8];
+   a.sort();
    ```
 
 - a changes to [7,8,9]
@@ -739,32 +710,31 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - Sort() takes an optional compare function.
 - If this function is provided as the first argument, the sort() function will consider these values as the basis of sorting.
 
-10. **Splice()** => splice can be used to add new items to an array
-    ```
-    const numbers = [1,2,3,4,5]
-    numbers.splice(2,1,23,24)
+10. **Splice()** : splice can be used to add new items to an array
+    ```javascript
+    const numbers = [1, 2, 3, 4, 5];
+    numbers.splice(2, 1, 23, 24);
     ```
 
 - returns deleted items and modifies the array
-- 2 => position to add
-- 1 => No of elements to remove
-- 23,23 => elements to be added
+- 2 : position to add
+- 1 : No of elements to remove
+- 23,23 : elements to be added
 
-11. **Slice()** =>
+11. **Slice()** :
 
 - slice out a piece from an array
 - It creates a new array
-  ```
-  const num = [1,2,3,4]
-  num.slice(2) //[3,4]
-  num.slice(1,3) //[2,3]
+
+  ```javascript
+  const num = [1, 2, 3, 4];
+  num.slice(2); //[3,4]
+  num.slice(1, 3); //[2,3]
   ```
 
-12. **reverse()**
+12. **reverse()** :
 
 - reverses the elements in the source array
-
-<hr style="width: 50%; margin: auto;">
 
 ### Loops in Arrays
 
@@ -773,17 +743,19 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 1. **forEach loop**
 
 - Calls a function, once for each array element
-  ```
-  const a = [1,2,3]
+
+  ```javascript
+  const a = [1, 2, 3];
   a.forEach((Value, index, array) => {
-  //function logic
+    //function logic
   });
   ```
 
 2. **map()**
 
 - Creates a new array be performing some operations on each array element.
-  ```
+
+  ```javascript
   const a = [1,2,3]
   a.map((value, index, array) => {
   return value\*value;
@@ -794,25 +766,30 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - Filters an array with values that passes a test
 - Creates a new array
-  ```
-  const a = [1,2,3,4,5]
+
+  ```javascript
+  const a = [1, 2, 3, 4, 5];
   a.filter(greater_than_5);
   ```
 
 4. **reduce method**
 
 - Reduces an array to a single value
+
+  ```javascript
+  const n = [1, 2, 3, 4, 5];
+  let sum = numbers.reduce(add);
   ```
-  const n = [1,2,3,4,5]
-  let sum = numbers.reduce(add)
-  ```
+
 - sum => 1+2+3+4+5
 - add => A function
 
 5. **Array.from**
 
-- used to create an array from any other object <br>
-  `Array.from("Jayesh")`
+- used to create an array from any other object
+  ```javascript
+  Array.from("Jayesh");
+  ```
 
 6. **for...of**
 
@@ -822,16 +799,12 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - for in loop can be used to get the keys from an array
 
----
-
-## <center> Chapter 6 - JavaScript in the Browser </center>
+## Chapter 6 - JavaScript in the Browser
 
 - JavaScript was initially created to make web pages alive. JS can be written right in a web page's HTML to make it interactive.
 - The browser has an embedded engine called the JavaScript engine or the JavaScript runtime.
 - JavaScript's ability in the browser is very limited to protect the user's safety.
 - Eg. a webpage on http://goofle.com cannot access http://google.com and steal information from there.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Developer Tools
 
@@ -845,26 +818,22 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - We can also write JavaScript commands in the Console.
 
-<hr style="width: 50%; margin: auto;">
-
 ### The Script Tag
 
 - The script tag is used to insert JavaScript into an HTML page.
 - The Script tag can be used to insert external or internal scripts.
 
-  ```
-  <script>
-      alert("Hello")
-  </script>
+  ```javascript
+  <script>alert("Hello")</script>
   ```
 
-**<center> OR </center>**
+- **<center> OR </center>**
 
-- `<script src = "./script.js"></script>`
+  ```javascript
+  <script src="./script.js"></script>
+  ```
 
 - The benefit of a separate javascript file is that the browser will download it and store it its cache.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Console Object Methods
 
@@ -879,7 +848,7 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - By using console.log(console) in browser we can see all the methods of console object.
 
-  ```
+  ```javascript
   Object [console] {
   log: [Function: log],
   warn: [Function: warn],
@@ -900,51 +869,52 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
   info: [Function: info],
   dirxml: [Function: dirxml],
   groupCollapsed: [Function: groupCollapsed],
-   Console: [Function: Console],
+  Console: [Function: Console],
   profile: [Function: profile],
   profileEnd: [Function: profileEnd],
   timeStamp: [Function: timeStamp],
   context: [Function: context],
   createTask: [Function: createTask]
   }
+
   ```
 
 - comprehensive list can be looked up on MDN.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Interaction : alert, prompt and confirm
 
 - **alert** => Used to invoke a mini window with a message
 
-  `alert("hello")`
+```javascript
+alert("hello");
+```
 
 - **prompt** => Used to take user input as String
 
-  `let input = prompt("Hii", "No")`
+```javascript
+let input = prompt("Hii", "No");
+```
 
-  - "No" : optional default value
+- "No" : optional default value
 
 - **confirm** => Shows a message and waits for the user to press OK or Cancel. Returns true for Ok and false for cancel.
 
 - **Example :**
 
-  ```
-  alert("Enter the value of a!") // popup in startup
-  let a = prompt("Enter a here", "57") //ask value of a (By default it is 57)
-  a = Number.parseInt(a) //convert String into number
-  alert("You entered a of type " + (typeof a)) //Display type of a
-  let write = confirm("Do you want to write it to the page") // asks permission to write on page
+  ```javascript
+  alert("Enter the value of a!"); // popup in startup
+  let a = prompt("Enter a here", "57"); //ask value of a (By default it is 57)
+  a = Number.parseInt(a); //convert String into number
+  alert("You entered a of type " + typeof a); //Display type of a
+  let write = confirm("Do you want to write it to the page"); // asks permission to write on page
   if (write) {
-  document.write(a) //if yes then print the value of a
+    document.write(a); //if yes then print the value of a
   } else {
-  document.write("Please allow me to write") //if no then print this message
+    document.write("Please allow me to write"); //if no then print this message
   }
   ```
 
 - The exact location and look is determined by the browser which is a limitation.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Window object, BOM and DOM
 
@@ -957,15 +927,11 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - Window object represents browser window and provides methods to control it.
 - It is a global object.
 
-<hr style="width: 50%; margin: auto;">
-
 ### Document Object Model (DOM)
 
 - Dom represents the page content as HTML
-  document.body => Page body as JS object
-  document.body.style.background = "green" => Changes page background to green
-
-<hr style="width: 50%; margin: auto;">
+  - `document.body` => Page body as JS object
+  - `document.body.style.background = "green"` => Changes page background to green
 
 ### Browser Object Model (BOM)
 
@@ -973,9 +939,7 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - The functions alert/confirm/prompt are also a part of the BOM.
   `location.href = "https://google.com"` => Redirect to another URL
 
----
-
-## <center> Chapter 7 - Walking the DOM </center>
+## Chapter 7 - Walking the DOM
 
 - DOM tree refers to the HTML page where all the notes are objects.
 - There can be 3 main types of nodes in the DOM tree :
@@ -984,11 +948,9 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 2. element nodes
 3. comment nodes
 
-- In a HTML page, <html> is at the root and <head> and <body> are its children, etc.
+- In a HTML page, `<html>` is at the root and `<head>` and `<body>` are its children, etc.
 
 - A text node is always a leaf of the tree.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Auto Correction
 
@@ -996,36 +958,30 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - for example, if we put something after the body, it is automatically moved inside the body.
 - Another example is `<table>` tag which must contain `<tbody>`
 
-<hr style="width: 50%; margin: auto;">
-
 ### Walking the DOM
 
-```
+```html
 <html>
-<head>
-<title> Hello </title>
-</head>
-<body>
-...
-</body>
+  <head>
+    <title>Hello</title>
+  </head>
+  <body>
+    ...
+  </body>
 </html>
 ```
 
-- document.body => page body tag
-- document.head => page head tag
-- document.documentElement => page HTML tag
+- `document.body` => page body tag
+- `document.head` => page head tag
+- `document.documentElement ` => page HTML tag
 
 - **Note :** Document body can sometimes be null if the javascript is written before the body tag.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Children of an Element
 
 - Direct as well as deeply nested elements of an element are called its children.
 - Child nodes => Elements that are direct children. for example, head and body are children of `<html>`
 - Descendant nodes => All nested elements, childrens, there childrens and so on...
-
-<hr style="width: 50%; margin: auto;">
 
 ### firstChild, lastChild, childNodes
 
@@ -1034,8 +990,9 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - `element.childNodes` => All child nodes
 
 - Following is always true:
-- `elem.childNodes[0] === elem.firstChild`
-- `elem.childNodes[elem.childNodes.length -1 ] === elem.lastChild`
+
+  - `elem.childNodes[0] === elem.firstChild`
+  - `elem.childNodes[elem.childNodes.length -1 ] === elem.lastChild`
 
 - There is also a method `elem.hasChildNodes()` to check whether there are any child nodes.
 
@@ -1043,17 +1000,13 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - childNodes looks like an array.
 - But its not actually an array but a collection.
-- We can use Array from (Collection) to convert it into an array. _Array methods will not work_
-
-<hr style="width: 50%; margin: auto;">
+- We can use Array from (Collection) to convert it into an array. **(Array methods will not work)**
 
 ### Notes on DOM Collections
 
 - They are read-only
 - They are live, elem.childNodes variable(reference) will automatically update if childNodes of elem is changed.
 - They are iterable using for...of loop.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Siblings and the Parent
 
@@ -1071,8 +1024,6 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - `alert(document.documentElement.parentNode);` //document
 - `alert(document.documentElement.parentElement);` //null
 
-<hr style="width: 50%; margin: auto;">
-
 ### Element Only Navigation
 
 - Sometimes, we dont want text or comment nodes.
@@ -1083,8 +1034,6 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - `document.nextElementSibling` => Next Sibling (Element)
 - `document.firstElementChild` => First Element Child
 - `document.lastElementChild` => Last Element Child
-
-<hr style="width: 50%; margin: auto;">
 
 ### Table Links
 
@@ -1102,44 +1051,40 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - `tr.rowIndex` => Row number starting from 0
 - `td.cellIndex` => number of cells inside enclosing `<tr>`
 
-<hr style="width: 50%; margin: auto;">
-
 ### Searching the DOM
 
 - DOM navigation properties are helpful when the elements are close to each other.
 - If they are not close to each other, we have some more methods to search the DOM
 
-1. **document.getElementById**
+#### 1. document.getElementById
 
 - This method is used to get the element with a given "id" attribute.
 
-  ```
-  let span = document.getElementById('span')
-  span.style.color = "red"
-  ```
+```javascript
+let span = document.getElementById("span");
+span.style.color = "red";
+```
 
-2. **document.querySelectorAll**
+#### 2. document.querySelectorAll
 
 - Returns all elements inside an element matching the given CSS selector.
 
-3. **document.querySelector**
+#### 3. document.querySelector
 
 - Returns the first element for the given CSS Selector.
 - A efficient version of `elem.querySelectorAll(CSS)[0]`
 
-4. `document.getElementsByTagName`
+#### 4. document.getElementsByTagName
 
 - Returns elements with the given tag name.
 
-5. `document.getElementsByClassName`
+#### 5. document.getElementsByClassName
 
 - Returns elements that have the given CSS class.
 
-6. `document.getElementsByName`
+#### 6. document.getElementsByName
 
 - Searches elements by the name attribute.
-
-<hr style="width: 50%; margin: auto;">
 
 ### Matches, Closest and Contains methods
 
@@ -1149,8 +1094,6 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 2. `elem.closest(css)` => To look for the nearest ancestor that mathces the given CSS selector. The element itself is also checked.
 3. `elemA.Contains(elemB)` => Returns true if elemB is inside elemA (a descendant of elemA) or when elemA==elemB.
 
----
-
 ## Chapter 8 - Events & other DOM properties
 
 ### Console.dir function
@@ -1158,15 +1101,11 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - `Console.log` shows the element DOM tree.
 - `Console.dir` shows the element as an object with its properties.
 
-<hr style="width: 50%; margin: auto;">
-
 ### tagName / nodeName
 
 - Used to read tag name of an element
 - tagName => only exists for Element nodes
 - nodeName => defined for only node (text, comment, etc.)
-
-<hr style="width: 50%; margin: auto;">
 
 ### innerHTML and outerHTML
 
@@ -1174,26 +1113,21 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 - The outerHTML property contains the full HTML innerHTML + the element itself.
 - innerHTML is valid for element nodes. For other node types we can use nodeValue or data.
 
-<hr style="width: 50%; margin: auto;">
-
 ### textContent
 
 - provides accedss to the text inside the element: only text, minus all tags.
 
-<hr style="width: 50%; margin: auto;">
-
 ### The hidden property
 
 - The "hidden" attribute and the DOM property specifies whether the element is visible or not.
-  ```
-  <div hidden> I am hidden</div>
-  <div id ="element"> I can be hidden </div>
+
+  ```html
+  <div hidden>I am hidden</div>
+  <div id="element">I can be hidden</div>
   <script>
-      element.hidden =true;
+    element.hidden = true;
   </script>
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Attribute Methods
 
@@ -1203,26 +1137,22 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 4. `elem.removeAttribute(name)` => Method to remove the attribute from elem.
 5. `elem.attributes` => Method to get the collection of all attributes.
 
-<hr style="width: 50%; margin: auto;">
-
 ### data-asterisk attributes
 
 - We can always create custom attributes but the ones starting with "data-" are reserved for programmers use.
 - They are available in a property named dataset.
 - If an element has an attribute named "data-one", its available as element.dataset.one
 
-<hr style="width: 50%; margin: auto;">
-
 ### Insertion Methods
 
 - We looked at some ways to insert elements in the DOM.
 - Here is another way:
 
-  ```
-  let div = document.createElement('div') //Create
-  div.className = "alert" //set Class
-  div.innerHTML = "<span>Hello</span>"
-  document.body.append(div)
+  ```javascript
+  let div = document.createElement("div"); //Create
+  div.className = "alert"; //set Class
+  div.innerHTML = "<span>Hello</span>";
+  document.body.append(div);
   ```
 
 - Here are some more insertion methods:
@@ -1232,8 +1162,6 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 3. `node.before(e)` => Insert before node
 4. `node.after(e)` => Insert after node
 5. `node.replaceWith(e)` => replaces node with the given node
-
-<hr style="width: 50%; margin: auto;">
 
 ### insertAdjacentHTML/Text/Element
 
@@ -1250,32 +1178,30 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - Example :-
 
-  ```
-  <div id = "div"></div>
+  ```html
+  <div id="div"></div>
   <script>
-      div.insertAdjacentHTML('beforebegin','<p>Hello</p>');
-      div.insertAdjacentHTML('afterend','<p>Bye</p>');
+    div.insertAdjacentHTML("beforebegin", "<p>Hello</p>");
+    div.insertAdjacentHTML("afterend", "<p>Bye</p>");
   </script>
   ```
 
 - The output would be :-
-  ```
+
+  ```html
   <p>Hello</p>
-  <div id = "div"></div>
+  <div id="div"></div>
   <p>Bye</p>
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### Node removal
 
 - To remove a node, there's a method `node.remove()`
-  ```
-  let id1 = document.getElementById("id1")
+
+  ```javascript
+  let id1 = document.getElementById("id1");
   id1.remove();
   ```
-
-<hr style="width: 50%; margin: auto;">
 
 ### ClassName and ClassList
 
@@ -1286,15 +1212,13 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 2. `elem.classList.toggle("class)` => adds the class if it doesn't exist, otherwise removes it.
 3. `elem.classList.contains("class")` => Checks for the given class, returns true or false.
 
-<hr style="width: 50%; margin: auto;">
-
 ### setTimeout and setInterval
 
 - setTimeout allows us to run a function once after the interval of time.
 
 - Syntax of setTimeout is as follows:
 
-  ```
+  ```javascript
   let timerId = setTimeout(function,<delay>,<arg1>,<arg2>)
   ```
 
@@ -1303,22 +1227,20 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
 - clearTimeout is used to cancel the execution (in case we change our mind)
 
-  ```
+  ```javascript
   let timeId = setTimeout((c) => alert("never"), 1000);
   clearTimeout(timerId); // cancel the execution
   ```
 
 - setInterval method has a similar syntax as setTimeout:
 
-  ```
+  ```javascript
   let timeId = setInterval(function, <delay>,<arg1>,<arg2>)
   ```
 
 - All arguments have the same meaning. But unlike setTimeout, it runs the function not only once, but regulary after the given interval of time.
 
 - To stop further calls, we can use `clearInterval(timerId)`
-
-<hr style="width: 50%; margin: auto;">
 
 ### Browser Events
 
@@ -1335,42 +1257,36 @@ numbers[2] =8 //"Numbers" now becomes [7,2,8,9]
 
   - **Document events** : DOMContentLoaded
 
-<hr style="width: 50%; margin: auto;">
-
 ### Handling Events
 
 - Events can be handled through HTML attributes.
 
-  ```
-  <input value = "Hey" onclick = "alert('hey')" type = "button">
+  ```html
+  <input value="Hey" onclick="alert('hey')" type="button" />
   ```
 
 - Events can also be handled through the onclick property
 
-  ```
-  elem.onclick = function (){
-  alert("Yes");
-  }
+  ```javascript
+  elem.onclick = function () {
+    alert("Yes");
+  };
   ```
 
 - **Note** : Adding a handler with JavaScript overwrites the existing handler.
-
-<hr style="width: 50%; margin: auto;">
 
 ### addEventListener and removeEventListener
 
 - addEventListener is used to assign multiple handlers to an event.
 
   `element.addEventListener(event, handler)`
-  `element.removeEventListener(event, handler)` _(handler must be the same function object for this to work)_
-
-<hr style="width: 50%; margin: auto;">
+  `element.removeEventListener(event, handler)` **(handler must be the same function object for this to work)**
 
 ### The Event Object
 
 - When an event happens, the browser creates an event object, puts details into it and passes it as an argument to the handler.
 
-  ```
+  ```javascript
   elem.onclick = function(event){
   ...
   }
