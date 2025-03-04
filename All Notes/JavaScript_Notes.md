@@ -1,8 +1,10 @@
+<div>
 <style>
   body {
     text-align: justify;
   }
 </style>
+</div>
 
 <h1 style="text-align:center">JAVASCRIPT NOTES</h1>
 
