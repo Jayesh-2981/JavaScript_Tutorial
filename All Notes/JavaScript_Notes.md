@@ -1,4 +1,3 @@
-<div>
 <style>
   body {
     text-align: justify;
@@ -1296,4 +1295,3 @@ span.style.color = "red";
 - `event.type` : Event type
 - `event.currentTarget` : Element that handled the event
 - `event.clientX/event.clientY` : Coordinates of the cursor
-</div>
