@@ -1,9 +1,3 @@
-<style>
-  body {
-    text-align: justify;
-  }
-</style>
-
 <h1 style="text-align:center">JAVASCRIPT NOTES</h1>
 
 ## Chapter 1 - Variables and Data
